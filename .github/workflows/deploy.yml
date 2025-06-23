@@ -1,4 +1,4 @@
-ame: Deploy to ECS
+name: Deploy to ECS
 
 on:
   push:
