@@ -24,4 +24,5 @@ jobs:
           cluster: ${{ secrets.CLUSTER_NAME }}
           service: ${{ secrets.SERVICE_NAME }}
           image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}:latest
-          wait-for-service-stability: true
+          region: ap-south-1          
+wait-for-service-stability: true
