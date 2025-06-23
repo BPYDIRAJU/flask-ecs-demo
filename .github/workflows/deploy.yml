@@ -1,4 +1,4 @@
-name: Deploy to ECS
+ame: Deploy to ECS
 
 on:
   push:
@@ -24,5 +24,6 @@ jobs:
           cluster: ${{ secrets.CLUSTER_NAME }}
           service: ${{ secrets.SERVICE_NAME }}
           image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}:latest
-          region: ap-south-1          
+          region: ap-south-1
+         
 wait-for-service-stability: true
