@@ -27,11 +27,11 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "/ecs/flask-task",
+          "awslogs-region": "ap-south-1",
+          "awslogs-stream-prefix": "ecs",
           "mode": "non-blocking",
           "awslogs-create-group": "true",
-          "max-buffer-size": "25m",
-          "awslogs-region": "ap-south-1",
-          "awslogs-stream-prefix": "ecs"
+          "max-buffer-size": "25m"
         }
       }
     }
